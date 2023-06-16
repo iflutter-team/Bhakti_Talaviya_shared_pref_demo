@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_pref_demo/screen/home/home_screen.dart';
-import 'package:shared_pref_demo/screen/home/home_screen_api.dart';
-import 'package:shared_pref_demo/screen/home/reg_api/reg_api_screen.dart';
+import 'package:shared_pref_demo/screen/reg_api/reg_api_screen.dart';
 
 class LoginApiscreen extends StatefulWidget {
   const LoginApiscreen({super.key});
@@ -21,7 +20,7 @@ class _LoginApiscreenState extends State<LoginApiscreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "Login Screen",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),

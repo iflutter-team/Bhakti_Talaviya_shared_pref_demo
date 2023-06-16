@@ -10,6 +10,7 @@ class AdManager {
     );
   }
 
+//
   static Future<void> showIntAd() async {
     UnityAds.showVideoAd(
         placementId: 'Interstitial_Android',
