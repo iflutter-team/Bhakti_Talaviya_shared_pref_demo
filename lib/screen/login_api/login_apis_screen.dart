@@ -9,9 +9,12 @@ class LoginApiscreen extends StatefulWidget {
   State<LoginApiscreen> createState() => _LoginApiscreenState();
 }
 
+TextEditingController controllerIdLoginApi = TextEditingController();
+TextEditingController controllerPassLoginApi = TextEditingController();
+TextEditingController controllerLNameLoginApi = TextEditingController();
+TextEditingController controllerFNameLoginApi = TextEditingController();
+
 class _LoginApiscreenState extends State<LoginApiscreen> {
-  TextEditingController controllerIdLoginApi = TextEditingController();
-  TextEditingController controllerNameLoginApi = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,9 +43,33 @@ class _LoginApiscreenState extends State<LoginApiscreen> {
               height: 10,
             ),
             TextField(
-              controller: controllerNameLoginApi,
+              controller: controllerLNameLoginApi,
               decoration: InputDecoration(
-                hintText: 'Name',
+                hintText: 'Last Name',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            TextField(
+              controller: controllerFNameLoginApi,
+              decoration: InputDecoration(
+                hintText: 'First Name',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            TextField(
+              controller: controllerPassLoginApi,
+              decoration: InputDecoration(
+                hintText: 'Password',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),

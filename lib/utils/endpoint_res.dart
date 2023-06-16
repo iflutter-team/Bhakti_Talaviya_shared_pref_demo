@@ -9,4 +9,7 @@ class EndPointRes {
   static const basePostUrl = 'https://dummyjson.com/';
   static const productAPI = '${basePostUrl}products';
   static const addProductAPI = '${basePostUrl}products/add';
+  static const authBaseUrl = 'https://panchat.in/api/client/';
+  static const String register = "${authBaseUrl}Register";
+  static const String login = "${authBaseUrl}login";
 }
