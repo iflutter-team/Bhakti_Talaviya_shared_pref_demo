@@ -11,6 +11,10 @@ class RegistrationApiScreen extends StatefulWidget {
 }
 
 class _RegistrationApiScreenState extends State<RegistrationApiScreen> {
+  TextEditingController controllerEmailIdRegApi = TextEditingController();
+  TextEditingController controllerfNameRegApi = TextEditingController();
+  TextEditingController controllerlNameRegApi = TextEditingController();
+  TextEditingController controllerPassRegApi = TextEditingController();
   RegistrationModel? regModel;
 
   Future userRegistration() async {
@@ -24,17 +28,17 @@ class _RegistrationApiScreenState extends State<RegistrationApiScreen> {
     if (regModel != null && regModel!.status == 1) {
       // ignore: use_build_context_synchronously
       Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => LoginApiscreen(),
-          ));
+        context,
+        MaterialPageRoute(
+          builder: (context) => const LoginApiscreen(),
+        ),
+      );
+    } else {
+      // ignore: use_build_context_synchronously
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('Already Registered')));
     }
   }
-
-  TextEditingController controllerEmailIdRegApi = TextEditingController();
-  TextEditingController controllerfNameRegApi = TextEditingController();
-  TextEditingController controllerlNameRegApi = TextEditingController();
-  TextEditingController controllerPassRegApi = TextEditingController();
 
   @override
   Widget build(BuildContext context) {

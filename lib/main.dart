@@ -1,7 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_pref_demo/screen/login_api/login_apis_screen.dart';
 import 'package:shared_pref_demo/services/pref_service.dart';
+
+import 'screen/splash/splash_screen_api.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -9,7 +10,7 @@ Future<void> main() async {
 
   await PrefService.init();
   runApp(const MaterialApp(
-    home: LoginApiscreen(),
+    home: SplashscreenApi(),
     debugShowCheckedModeBanner: false,
   ));
 }

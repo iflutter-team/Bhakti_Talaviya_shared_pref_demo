@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
-import 'package:shared_pref_demo/model/photosModel.dart';
 import 'package:shared_pref_demo/model/product_model.dart';
 import 'package:shared_pref_demo/services/http_service.dart';
 import 'package:shared_pref_demo/utils/endpoint_res.dart';

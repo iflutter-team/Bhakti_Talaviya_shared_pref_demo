@@ -4,7 +4,7 @@ import 'package:shared_pref_demo/model/models.dart';
 import 'package:shared_pref_demo/model/photosModel.dart';
 import 'package:shared_pref_demo/model/product_model.dart';
 import 'package:shared_pref_demo/screen/home/home_screen_api.dart';
-import 'package:shared_pref_demo/screen/login/login_screen.dart';
+import 'package:shared_pref_demo/screen/login_api/login_apis_screen.dart';
 import 'package:shared_pref_demo/services/pref_service.dart';
 import 'package:shared_pref_demo/utils/prefrence_res.dart';
 
@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const LoginScreen(),
+                      builder: (context) => const LoginApiscreen(),
                     ),
                     (route) => false);
               },
