@@ -20,18 +20,4 @@ class HomeScreenApi {
       }
     }
   }
-
-  //PostApi
-  // static Future addData(Map<String, dynamic> body) async {
-  //   try {
-  //     http.Response? response = await HttpService.postApi(
-  //       url: EndPointRes.photosEndPoint,
-  //       body:
-  //     );
-  //   } catch (e) {
-  //     if (kDebugMode) {
-  //       print(e);
-  //     }
-  //   }
-  // }
 }

@@ -89,9 +89,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     crossAxisCount: 2),
                 itemBuilder: (context, index) => Container(
                   margin: const EdgeInsets.all(10),
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                       color: Colors.white,
-                      boxShadow: [BoxShadow(blurRadius: 2)]),
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.grey.shade500,
+                            blurRadius: 4,
+                            offset: const Offset(3, 3),
+                            spreadRadius: 0.5)
+                      ]),
                   child: Column(
                     children: [
                       SizedBox(
@@ -105,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       Text(
                         productlist!.products![index].brand,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                       Row(
